@@ -9,7 +9,7 @@ pipeline {
         stage('Parallel Stage') {
             when {
                 anyOf {
-                   branch 'master'
+                   branch 'main'
                 }
             }
             failFast true
