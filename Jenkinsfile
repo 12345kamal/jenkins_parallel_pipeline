@@ -7,9 +7,6 @@ pipeline {
             }
         }
         stage('Parallel Stage') {
-            when {
-                branch "main"
-            }
             parallel {
                 stage('stage one') {
                     agent {
